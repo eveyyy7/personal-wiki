@@ -1,0 +1,98 @@
+{
+  "mode": "ask",
+  "question": "Why does splitting a model across several GPUs create a need for fast interconnects like NVLink?",
+  "time": "2026-09-29 18:43:03",
+  "environment": {
+    "model": "gemma4:e4b",
+    "quantization": "Q4_K_M",
+    "execution": "local",
+    "runtime": "Ollama 0.34.4",
+    "endpoint": "http://localhost:11434",
+    "num_ctx": 8192
+  },
+  "chat_history_used": false,
+  "persona_used": false,
+  "retrieved": [
+    {
+      "id": "podcast-llm-inference-memory#part-9-what-if-one-gpu-is-not-enough",
+      "kind": "raw",
+      "source": "raw/podcast-llm-inference-memory.md",
+      "doc_title": "Podcast — Why LLM Inference Is Really a Memory Problem",
+      "section": "Part 9 — What if One GPU Is Not Enough?",
+      "line_start": 44,
+      "line_end": 47,
+      "text": "Large models often need multiple GPUs. Two important approaches are pipeline parallelism and tensor parallelism.\nPipeline parallelism splits the model by layers across GPUs. It helps memory capacity, but later stages may wait for earlier ones, creating idle gaps known as pipeline bubbles.\nTensor parallelism splits computation inside a layer across GPUs. More GPUs can compute together, but they must communicate and synchronize frequently.\nRecurring pattern: compute problem goes down; communication problem goes up. This is why NVLink, NVSwitch, RDMA, and high-speed networking matter.",
+      "score": 17.83
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-8-nvlink-vs-pcie",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 8 — NVLINK VS PCIE",
+      "line_start": 183,
+      "line_end": 193,
+      "text": "PCIe is a general-purpose interface used by CPUs, GPUs, SSDs, network cards, and many other devices.\nNVLink is much more specialized for GPU-to-GPU communication.\nThink of PCIe as a general city road.\nThink of NVLink as a dedicated high-speed railway between GPUs.\nPCIe = general-purpose\nNVLink = dedicated high-speed GPU-to-GPU interconnect\nThis matters in large-model training because one model may be split across many GPUs. Those GPUs must exchange tensors, activations, gradients, and parameters continuously.",
+      "score": 14.84
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-7-what-is-nvlink",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 7 — WHAT IS NVLINK?",
+      "line_start": 166,
+      "line_end": 179,
+      "text": "NVLink is NVIDIA’s high-speed interconnect architecture for GPUs.\nThe easiest way to distinguish NVLink from SerDes is:\nSerDes asks:\n“How do bits physically move very fast?”\nNVLink asks:\n“How should NVIDIA GPUs communicate with each other as one system?”\nSerDes is lower level.\nNVLink is a higher-level GPU interconnect architecture.\nNVLink is not just a cable. It includes high-bandwidth GPU-to-GPU communication, protocol behavior, memory access behavior, topology, and system-level coordination.",
+      "score": 12.06
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-10-why-this-matters-for-nvidia",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 10 — WHY THIS MATTERS FOR NVIDIA",
+      "line_start": 209,
+      "line_end": 225,
+      "text": "NVIDIA’s moat is not just the GPU.\nIts system includes:\nGPU\n+ CUDA\n+ NVLink\n+ NVSwitch\n+ networking\n+ libraries\n+ distributed training software\nThis makes NVIDIA harder to replace than if it were only selling a fast chip.\nEven if AMD builds a competitive GPU, customers still need to think about software, libraries, distributed training, interconnect, networking, memory behavior, and system architecture.\nNVIDIA’s moat is not only GPU performance, but the whole system.",
+      "score": 11.26
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-12-the-big-picture",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 12 — THE BIG PICTURE",
+      "line_start": 243,
+      "line_end": 281,
+      "text": "AI infrastructure is moving from one simple question:\n“How fast is the GPU?”\ntoward a broader system question:\n“How efficiently can thousands of chips compute, communicate, access memory, and operate together?”\nCompetition in AI infrastructure is shifting from:\n“How fast is a single GPU?”\nto:\n“How can thousands of chips compute, communicate, and access memory efficiently together?”\nImportant investment categories now include:\n- GPUs\n- custom ASICs\n- CPUs\n- HBM\n- SerDes\n- Ethernet\n- NVLink-like interconnects\n- switches\n- optical networking\n- packaging\n- power infrastructure\nThe bottleneck can move.\nAt one stage, compute is the bottleneck.\nThen memory bandwidth becomes the bottleneck.\nThen networking becomes the bottleneck.\nThen power becomes the bottleneck.\nA useful sentence to remember:\nAI infrastructure investing is often about finding the next bottleneck.\nAt its core, AI infrastructure investing is often about finding the next bottleneck.",
+      "score": 9.52
+    }
+  ],
+  "model_called": true,
+  "prompt_chars": 4574,
+  "answer": "When large models require multiple GPUs, techniques like pipeline parallelism and tensor parallelism are used [1]. Pipeline parallelism splits the model by layers across GPUs, and tensor parallelism splits computation inside a layer across GPUs [1]. In both scenarios, the GPUs must continuously exchange tensors, activations, gradients, and parameters, which necessitates fast interconnects [2]. The need for these fast interconnects arises because the overall system efficiency depends on how well thousands of chips can compute, communicate, and access memory together [5].",
+  "timing": {
+    "total_s": 8.21,
+    "load_s": 0.0,
+    "prompt_tokens": 1116,
+    "output_tokens": 101,
+    "tokens_per_s": 24.8
+  },
+  "memory": {
+    "size_gb": 3.24,
+    "size_vram_gb": 3.24,
+    "context_length": 8192
+  },
+  "citation_check": {
+    "cited": [
+      1,
+      2,
+      5
+    ],
+    "insufficient_evidence": false,
+    "unsupported_numbers": [],
+    "problems": [],
+    "status": "pass"
+  }
+}

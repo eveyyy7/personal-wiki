@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "path:wiki/",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:wiki/Economics ",
+      "color": {
+        "a": 1,
+        "rgb": 14042437
+      }
+    },
+    {
+      "query": "path:wiki/Hardware ",
+      "color": {
+        "a": 1,
+        "rgb": 14721072
+      }
+    },
+    {
+      "query": "path:wiki/Industry ",
+      "color": {
+        "a": 1,
+        "rgb": 10181046
+      }
+    },
+    {
+      "query": "path:wiki/Inference ",
+      "color": {
+        "a": 1,
+        "rgb": 3900150
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -2,
+  "nodeSizeMultiplier": 1.4,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1.6267076756670888,
+  "close": false
+}

@@ -1,0 +1,5 @@
+{
+  "src-podcast-llm-inference-memory": "Study podcast script written for Evey. The original draft had short Chinese reinforcement lines; before the file entered raw/ they were translated to English (same meaning) so the whole wiki is in English. Unchanged since it entered raw/.",
+  "src-podcast-asics-broadcom-nvlink": "Study podcast script written for Evey. The original draft had Chinese restatements after English paragraphs; before the file entered raw/ they were translated to English (same meaning). Unchanged since it entered raw/.",
+  "src-podcast-201a-econ-review": "Evey's own MBA 201A midterm review script, a paraphrased study aid (no exam questions). Before it was added to raw/, Chapters 1 (exam-taking strategy) and 8 (personal past mistakes) and a few personal sentences were removed for privacy; original chapter numbers were kept. The file has not been changed since it entered raw/."
+}

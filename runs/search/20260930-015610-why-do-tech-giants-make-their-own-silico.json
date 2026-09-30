@@ -1,0 +1,42 @@
+{
+  "mode": "search",
+  "query": "Why do tech giants make their own silicon?",
+  "time": "2026-09-30 01:56:10",
+  "model_called": false,
+  "index_built_at": "2026-09-29 18:42:33",
+  "results": [
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-4-where-broadcom-comes-in",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 4 — WHERE BROADCOM COMES IN",
+      "line_start": 79,
+      "line_end": 109,
+      "text": "A useful way to think about Broadcom is:\nThe hyperscaler defines what the chip needs to do.\nBroadcom helps turn those requirements into scalable, manufacturable silicon.\nThe simplest way to understand it:\nThe hyperscaler decides “what chip do I want.”\nBroadcom helps it solve “how to actually turn that into a high-performance chip that can be mass-produced.”\nThe hyperscaler usually owns:\n- the AI model and workload\n- performance targets\n- latency targets\n- power targets\n- software and compiler stack\n- product roadmap\n- deployment strategy\nBroadcom contributes more heavily in:\n- silicon implementation\n- high-speed I/O\n- SerDes\n- networking IP\n- chip interfaces\n- physical design\n- packaging integration\n- process-node integration\n- manufacturability\nThe hyperscaler is more the “demand side + product owner + workload expert.”\nBroadcom is more the “semiconductor engineering + connectivity + implementation partner.”",
+      "score": 5.43
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-5-who-actually-manufactures-the-chip",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 5 — WHO ACTUALLY MANUFACTURES THE CHIP?",
+      "line_start": 113,
+      "line_end": 137,
+      "text": "Broadcom is fabless. It does not usually own the factories that physically print the transistors.\nThe chain is roughly:\nHyperscaler\n→ defines workload and architecture\nBroadcom\n→ helps design and implement the chip\nTSMC or another foundry\n→ fabricates the silicon\nPackaging and HBM suppliers\n→ package the chip and memory\nHyperscaler\n→ deploys the system in its data centers\nDivision of roles:\nHyperscaler = defines the requirements\nBroadcom = design and implementation\nTSMC = manufacturing\nHBM / packaging ecosystem = packaging and memory\nHyperscaler = final deployment and use",
+      "score": 4.99
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#final-recap",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "FINAL RECAP",
+      "line_start": 285,
+      "line_end": 309,
+      "text": "ASIC:\nA specialized chip optimized for a narrower workload.\nHyperscaler:\nA company large enough to operate massive cloud or AI infrastructure and economically justify custom silicon.\nBroadcom:\nA custom-silicon and connectivity partner that helps turn hyperscaler requirements into scalable silicon and networking systems.\nSerDes:\nThe lower-level technology that moves bits at extremely high speed between chips and systems.\nNVLink:\nNVIDIA’s high-speed GPU interconnect architecture.\nNVSwitch:\nThe switching layer that allows many NVLink-connected GPUs to communicate efficiently.\nFinal strategic idea:\nNVIDIA wins through flexibility, software, and system integration.\nCustom ASICs win through specialization, cost efficiency, and control.\nBroadcom can benefit because it helps hyperscalers build both the custom compute and the connectivity around it.",
+      "score": 4.45
+    }
+  ]
+}

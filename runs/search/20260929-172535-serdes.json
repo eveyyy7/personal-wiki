@@ -1,0 +1,64 @@
+{
+  "mode": "search",
+  "query": "SerDes",
+  "time": "2026-09-29 17:25:35",
+  "model_called": false,
+  "index_built_at": "2026-09-29 17:25:35",
+  "results": [
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-6-what-is-serdes",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 6 — WHAT IS SERDES?",
+      "line_start": 141,
+      "line_end": 162,
+      "text": "SerDes means Serializer / Deserializer.\nInside a chip, data may be processed in parallel. For long-distance or high-speed chip-to-chip communication, the serializer converts parallel data into a high-speed serial stream. The deserializer converts it back.\nParallel data\n→ Serializer\n→ High-speed serial signal\n→ Transmission\n→ Deserializer\n→ Restored to parallel data\nWhy does this matter for AI?\nThousands of accelerators constantly exchange activations, gradients, model parameters, KV-cache data, and routing information.\nIf communication is too slow, expensive compute units sit idle waiting for data.\nIf the compute chips are fast but pass data to each other slowly, the whole AI cluster is still held back by a communication bottleneck.\nThat is why Broadcom’s strength in SerDes and networking is valuable.\nIt helps build not only the “brain” of the AI system, but also the “nervous system” connecting the chips.",
+      "score": 3.7
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-7-what-is-nvlink",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 7 — WHAT IS NVLINK?",
+      "line_start": 166,
+      "line_end": 179,
+      "text": "NVLink is NVIDIA’s high-speed interconnect architecture for GPUs.\nThe easiest way to distinguish NVLink from SerDes is:\nSerDes asks:\n“How do bits physically move very fast?”\nNVLink asks:\n“How should NVIDIA GPUs communicate with each other as one system?”\nSerDes is lower level.\nNVLink is a higher-level GPU interconnect architecture.\nNVLink is not just a cable. It includes high-bandwidth GPU-to-GPU communication, protocol behavior, memory access behavior, topology, and system-level coordination.",
+      "score": 3.58
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#opening",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "(opening)",
+      "line_start": 2,
+      "line_end": 3,
+      "text": "Episode: ASICs, Broadcom, SerDes, and NVLink\nStudy podcast script",
+      "score": 3.25
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#intro",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "INTRO",
+      "line_start": 7,
+      "line_end": 13,
+      "text": "Today we are going to connect several concepts that often appear together in AI infrastructure discussions: ASICs, hyperscalers, Broadcom, SerDes, and NVLink.\nIn this episode we connect several AI infrastructure concepts that often appear together: ASIC, hyperscaler, Broadcom, SerDes, and NVLink.\nThe goal is not just to memorize definitions. The goal is to understand the system: who designs what, why hyperscalers build custom chips, how Broadcom participates, and why networking is becoming almost as important as compute.\nThe point is not to memorize definitions but to understand the whole system: who is responsible for what, why big companies build their own chips, where Broadcom participates, and why network interconnect is becoming more and more important.",
+      "score": 3.07
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-11-why-this-matters-for-broadcom",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 11 — WHY THIS MATTERS FOR BROADCOM",
+      "line_start": 229,
+      "line_end": 239,
+      "text": "Broadcom can benefit from custom ASIC growth in two ways.\nFirst, it can help hyperscalers build the accelerator itself.\nSecond, it can also supply networking and connectivity around those accelerators.\nThat means Broadcom may benefit from both compute growth and networking growth.\nThis is also what makes Broadcom special.\nIt does not necessarily earn money only from ASICs; it may also earn money from infrastructure such as SerDes, Ethernet, switching, and optical connectivity.",
+      "score": 2.39
+    }
+  ]
+}

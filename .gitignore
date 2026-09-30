@@ -1,0 +1,7 @@
+# machine state (rebuilt by the CLI)
+.wiki_state/
+__pycache__/
+drafts/
+.DS_Store
+# Obsidian workspace settings
+vault/.obsidian/workspace*.json

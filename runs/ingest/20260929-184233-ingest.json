@@ -1,0 +1,23 @@
+{
+  "mode": "ingest",
+  "time": "2026-09-29 18:42:33",
+  "environment": {
+    "model": "gemma4:e4b",
+    "quantization": "Q4_K_M",
+    "execution": "local",
+    "runtime": "Ollama 0.34.4",
+    "endpoint": "http://localhost:11434",
+    "num_ctx": 8192
+  },
+  "unchanged": [
+    "raw/podcast-201a-econ-review.md",
+    "raw/podcast-asics-broadcom-nvlink.md",
+    "raw/podcast-llm-inference-memory.md"
+  ],
+  "changed": [],
+  "created": [],
+  "updated": [],
+  "skipped_reviewed": [],
+  "removed": [],
+  "calls": []
+}

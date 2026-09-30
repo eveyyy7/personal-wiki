@@ -1,0 +1,170 @@
+{
+  "Market Demand and Supply": {
+    "folder": "Economics",
+    "sources": {
+      "raw/podcast-201a-econ-review.md": [
+        "Chapter 2 — Lecture one: equilibrium, and why it is efficient"
+      ]
+    },
+    "description": "Defines market demand, supply, and the concept of market equilibrium.",
+    "file": "wiki/Economics/Market Demand and Supply.md"
+  },
+  "Economic Cost Calculation": {
+    "folder": "Economics",
+    "sources": {
+      "raw/podcast-201a-econ-review.md": [
+        "Chapter 3 — Lecture two: economic cost"
+      ]
+    },
+    "description": "Formula and applications for calculating economic cost.",
+    "file": "wiki/Economics/Economic Cost Calculation.md"
+  },
+  "Price Taker Decisions": {
+    "folder": "Economics",
+    "sources": {
+      "raw/podcast-201a-econ-review.md": [
+        "Chapter 4 — Lecture three: cost curves and the price taker"
+      ]
+    },
+    "description": "Determines optimal production levels and supply curve for a price taker firm.",
+    "file": "wiki/Economics/Price Taker Decisions.md"
+  },
+  "Demand Elasticity and Statics": {
+    "folder": "Economics",
+    "sources": {
+      "raw/podcast-201a-econ-review.md": [
+        "Chapter 5 — Lecture four: demand, elasticity, and comparative statics"
+      ]
+    },
+    "description": "Concepts of demand, elasticity, and how market shocks affect price and quantity.",
+    "file": "wiki/Economics/Demand Elasticity and Statics.md"
+  },
+  "Monopoly Price Making": {
+    "folder": "Economics",
+    "sources": {
+      "raw/podcast-201a-econ-review.md": [
+        "Chapter 6 — Lecture five: monopoly, the price maker"
+      ]
+    },
+    "description": "Monopolist profit maximization using marginal revenue and marginal cost.",
+    "file": "wiki/Economics/Monopoly Price Making.md"
+  },
+  "Two-Part Tariff": {
+    "folder": "Economics",
+    "sources": {
+      "raw/podcast-201a-econ-review.md": [
+        "Chapter 7 — Lecture six: two-part tariff and price discrimination"
+      ]
+    },
+    "description": "Optimal pricing strategies using two-part tariffs and price discrimination.",
+    "file": "wiki/Economics/Two-Part Tariff.md"
+  },
+  "Hyperscaler Custom Chip Design": {
+    "folder": "Hardware",
+    "sources": {
+      "raw/podcast-asics-broadcom-nvlink.md": [
+        "PART 1 — WHY HYPERSCALERS BUILD THEIR OWN CHIPS",
+        "FINAL RECAP"
+      ]
+    },
+    "description": "Hyperscalers build custom chips for massive cost savings and efficiency.",
+    "file": "wiki/Hardware/Hyperscaler Custom Chip Design.md"
+  },
+  "AI ASIC Optimization": {
+    "folder": "Hardware",
+    "sources": {
+      "raw/podcast-asics-broadcom-nvlink.md": [
+        "PART 2 — WHY ASICs ARE ESPECIALLY ATTRACTIVE FOR INFERENCE",
+        "PART 3 — DIFFERENT TYPES OF AI ASICs",
+        "FINAL RECAP"
+      ]
+    },
+    "description": "ASICs offer cost advantages when workloads are predictable and repetitive.",
+    "file": "wiki/Hardware/AI ASIC Optimization.md"
+  },
+  "Broadcom Role in Silicon": {
+    "folder": "Industry",
+    "sources": {
+      "raw/podcast-asics-broadcom-nvlink.md": [
+        "PART 4 — WHERE BROADCOM COMES IN",
+        "PART 5 — WHO ACTUALLY MANUFACTURES THE CHIP?",
+        "PART 11 — WHY THIS MATTERS FOR BROADCOM",
+        "FINAL RECAP"
+      ]
+    },
+    "description": "Broadcom's role in turning hyperscaler requirements into silicon and connectivity.",
+    "file": "wiki/Industry/Broadcom Role in Silicon.md"
+  },
+  "High Speed Interconnect Technologies": {
+    "folder": "Hardware",
+    "sources": {
+      "raw/podcast-asics-broadcom-nvlink.md": [
+        "PART 6 — WHAT IS SERDES?",
+        "PART 7 — WHAT IS NVLINK?",
+        "PART 8 — NVLINK VS PCIE",
+        "PART 9 — WHAT IS NVSWITCH?",
+        "FINAL RECAP"
+      ]
+    },
+    "description": "Details on high-speed chip interconnects like SerDes, NVLink, and NVSwitch.",
+    "file": "wiki/Hardware/High Speed Interconnect Technologies.md"
+  },
+  "AI Infrastructure System View": {
+    "folder": "Industry",
+    "sources": {
+      "raw/podcast-asics-broadcom-nvlink.md": [
+        "INTRO",
+        "PART 12 — THE BIG PICTURE"
+      ]
+    },
+    "description": "Overview of interconnected components in modern AI infrastructure systems.",
+    "file": "wiki/Industry/AI Infrastructure System View.md"
+  },
+  "LLM Inference Stages": {
+    "folder": "Inference",
+    "sources": {
+      "raw/podcast-llm-inference-memory.md": [
+        "Part 1 — Inference is not “run the model once”"
+      ]
+    },
+    "description": "LLM inference involves two distinct stages: prefill and decode.",
+    "file": "wiki/Inference/LLM Inference Stages.md"
+  },
+  "Prefill Decode Bottlenecks": {
+    "folder": "Inference",
+    "sources": {
+      "raw/podcast-llm-inference-memory.md": [
+        "Part 2 — Why Prefill and Decode Have Different Bottlenecks"
+      ]
+    },
+    "description": "Prefill and decode stages have distinct bottlenecks affecting LLM performance.",
+    "file": "wiki/Inference/Prefill Decode Bottlenecks.md"
+  },
+  "Memory Constraints": {
+    "folder": "Inference",
+    "sources": {
+      "raw/podcast-llm-inference-memory.md": [
+        "Part 5 — Memory Capacity versus Memory Bandwidth"
+      ]
+    },
+    "description": "Differentiating between memory capacity and memory bandwidth constraints.",
+    "file": "wiki/Inference/Memory Constraints.md"
+  },
+  "LLM Optimization Techniques": {
+    "folder": "Inference",
+    "sources": {
+      "raw/podcast-llm-inference-memory.md": [
+        "Part 4 — What is the KV Cache?",
+        "Part 6 — Batching",
+        "Part 7 — Continuous / In-flight Batching",
+        "Part 8 — PagedAttention",
+        "Part 10 — FlashAttention and Data Movement",
+        "Part 11 — Quantization",
+        "Part 12 — Distillation",
+        "Part 13 — Speculative Decoding"
+      ]
+    },
+    "description": "Techniques for optimizing LLM inference performance and cost.",
+    "file": "wiki/Inference/LLM Optimization Techniques.md"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "mode": "ask",
+  "question": "Why did egg prices spike after a bird-flu outbreak while the number of eggs sold barely changed?",
+  "time": "2026-09-29 18:42:33",
+  "environment": {
+    "model": "gemma4:e4b",
+    "quantization": "Q4_K_M",
+    "execution": "local",
+    "runtime": "Ollama 0.34.4",
+    "endpoint": "http://localhost:11434",
+    "num_ctx": 8192
+  },
+  "chat_history_used": false,
+  "persona_used": false,
+  "retrieved": [
+    {
+      "id": "podcast-201a-econ-review#chapter-5-lecture-four-demand-elasticity-and-com-3",
+      "kind": "raw",
+      "source": "raw/podcast-201a-econ-review.md",
+      "doc_title": "MBA 201A Morning Review — Economics for Business Decisions, Lectures 1–6",
+      "section": "Chapter 5 — Lecture four: demand, elasticity, and comparative statics",
+      "line_start": 32,
+      "line_end": 33,
+      "text": "And the incidence rule, which is the single highest-value sentence in this section: a shock lands on price when the other curve is steep — inelastic — and on quantity when the other curve is flat — elastic. Concretely: short-run demand for eggs is nearly vertical, so when supply shifts in, the new crossing is far above the old one but barely to the left. The shock lands on price.\nTwo corollaries. The more inelastic demand is, the more of a cost increase sellers can pass on to buyers — that was quiz four, the insulin question; the cost increase reaches the buyers almost entirely. And in the long run both curves are flatter, so high prices are self-correcting: supply is flatter, and the price spike gives most of its gain back through entry, capacity, and substitution. Which lets you answer the \"is this price gouging\" question the way Oprea wants: the price doubled because supply fell against inelastic demand — scarcity, not gouging.",
+      "score": 10.73
+    },
+    {
+      "id": "podcast-201a-econ-review#chapter-5-lecture-four-demand-elasticity-and-com-2",
+      "kind": "raw",
+      "source": "raw/podcast-201a-econ-review.md",
+      "doc_title": "MBA 201A Morning Review — Economics for Business Decisions, Lectures 1–6",
+      "section": "Chapter 5 — Lecture four: demand, elasticity, and comparative statics",
+      "line_start": 30,
+      "line_end": 32,
+      "text": "When both curves move, one variable is pinned down and the other is ambiguous. Demand out and supply out: quantity rises, price ambiguous. Demand out and supply in: price rises, quantity ambiguous. Here is the sentence to have ready: both shocks push price up, but they push quantity in opposite directions, so the net change in quantity depends on which shift is larger. For example, a wage increase raises the cost of each room, shifting supply in — price up, quantity down — while a demand shifter moves demand out — price up, quantity up.\nElasticity. Epsilon equals percentage change in quantity divided by percentage change in price. Absolute value above one is elastic, below one is inelastic. It is unit-free, which is why it is comparable across goods and slopes are not.\nAnd the incidence rule, which is the single highest-value sentence in this section: a shock lands on price when the other curve is steep — inelastic — and on quantity when the other curve is flat — elastic. Concretely: short-run demand for eggs is nearly vertical, so when supply shifts in, the new crossing is far above the old one but barely to the left. The shock lands on price.",
+      "score": 10.43
+    },
+    {
+      "id": "podcast-201a-econ-review#chapter-9-ten-sentences-to-have-on-the-tip-of-yo",
+      "kind": "raw",
+      "source": "raw/podcast-201a-econ-review.md",
+      "doc_title": "MBA 201A Morning Review — Economics for Business Decisions, Lectures 1–6",
+      "section": "Chapter 9 — Ten sentences to have on the tip of your tongue",
+      "line_start": 60,
+      "line_end": 70,
+      "text": "Listen to these once, then say them back.\nIn competitive markets you don't control the price; fundamentals and equilibrium do.\nThe money already spent is sunk and is not an economic cost; owning it does not make it free.\nThe relevant cost of a unit from inventory is its replacement cost if you restock, or its resale value if you don't.\nA price taker produces where price equals marginal cost, so the market price must be that number.\nA fixed cost enters neither marginal revenue nor marginal cost, so quantity does not change; only average cost shifts up.\nShocks land on price when the other curve is steep, and on quantity when it is flat.\nHigh prices are self-correcting: in the long run supply is flatter, so the spike gives most of its gain back.\nA price maker sets marginal revenue equal to marginal cost, then reads the price off the demand curve.\nDeadweight loss is the triangle between demand and marginal cost, from the monopoly quantity out to the competitive quantity — value never created.\nSet the per-unit price equal to marginal cost so customers buy the efficient quantity, then set the fee equal to the consumer surplus at that price.",
+      "score": 8.63
+    },
+    {
+      "id": "podcast-201a-econ-review#chapter-6-lecture-five-monopoly-the-price-maker-1",
+      "kind": "raw",
+      "source": "raw/podcast-201a-econ-review.md",
+      "doc_title": "MBA 201A Morning Review — Economics for Business Decisions, Lectures 1–6",
+      "section": "Chapter 6 — Lecture five: monopoly, the price maker",
+      "line_start": 38,
+      "line_end": 39,
+      "text": "The one rule: a price maker sets marginal revenue equal to marginal cost, and then reads the price off the demand curve. Price stays above marginal cost. Never, ever set price equal to marginal cost for a monopolist. That was quiz five, and it was the single most common wrong answer.\nWhy is marginal revenue below price? Because selling one more unit requires cutting the price on all the units you have already sold. Marginal revenue equals price plus the slope times quantity — the gain on the new unit minus the price cut on everything before it.",
+      "score": 6.37
+    },
+    {
+      "id": "podcast-201a-econ-review#chapter-5-lecture-four-demand-elasticity-and-com-4",
+      "kind": "raw",
+      "source": "raw/podcast-201a-econ-review.md",
+      "doc_title": "MBA 201A Morning Review — Economics for Business Decisions, Lectures 1–6",
+      "section": "Chapter 5 — Lecture four: demand, elasticity, and comparative statics",
+      "line_start": 33,
+      "line_end": 34,
+      "text": "Two corollaries. The more inelastic demand is, the more of a cost increase sellers can pass on to buyers — that was quiz four, the insulin question; the cost increase reaches the buyers almost entirely. And in the long run both curves are flatter, so high prices are self-correcting: supply is flatter, and the price spike gives most of its gain back through entry, capacity, and substitution. Which lets you answer the \"is this price gouging\" question the way Oprea wants: the price doubled because supply fell against inelastic demand — scarcity, not gouging.\nThe traps here. Treating a short-run spike as permanent — Solyndra, Amazon's COVID build-out. Reading tea leaves, treating price moves as random or as rivals' moods and morals. And treating a scatter of price-quantity points as your demand curve: both curves are moving, so market data mixes supply and demand shifts. You never see the demand curve directly; it has to be inferred from how quantity responds to price, which is why you need an A/B test or a natural experiment — Uber's rounding, ZipRecruiter's price variation.",
+      "score": 5.99
+    }
+  ],
+  "model_called": true,
+  "prompt_chars": 6582,
+  "answer": "The evidence does not state that the number of eggs sold barely changed; it only mentions that when supply shifts in for eggs, the new crossing is far above the old one but barely to the left [1][2]. The incidence rule states that a shock lands on price when the other curve is steep—inelastic—and on quantity when the other curve is flat—elastic [2][3]. Concretely, the short-run demand for eggs is nearly vertical, meaning it is inelastic, so when supply shifts in, the shock lands on price [1][2]. Furthermore, the more inelastic the demand is, the more of a cost increase sellers can pass on to buyers, meaning the cost increase reaches the buyers almost entirely [1][5].",
+  "timing": {
+    "total_s": 19.69,
+    "load_s": 7.19,
+    "prompt_tokens": 1522,
+    "output_tokens": 153,
+    "tokens_per_s": 22.6
+  },
+  "memory": {
+    "size_gb": 3.24,
+    "size_vram_gb": 3.24,
+    "context_length": 8192
+  },
+  "citation_check": {
+    "cited": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "insufficient_evidence": false,
+    "unsupported_numbers": [],
+    "problems": [],
+    "status": "pass"
+  }
+}

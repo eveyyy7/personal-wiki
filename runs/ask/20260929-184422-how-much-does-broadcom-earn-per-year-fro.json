@@ -1,0 +1,94 @@
+{
+  "mode": "ask",
+  "question": "How much does Broadcom earn per year from AI chips?",
+  "time": "2026-09-29 18:44:16",
+  "environment": {
+    "model": "gemma4:e4b",
+    "quantization": "Q4_K_M",
+    "execution": "local",
+    "runtime": "Ollama 0.34.4",
+    "endpoint": "http://localhost:11434",
+    "num_ctx": 8192
+  },
+  "chat_history_used": false,
+  "persona_used": false,
+  "retrieved": [
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-11-why-this-matters-for-broadcom",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 11 — WHY THIS MATTERS FOR BROADCOM",
+      "line_start": 229,
+      "line_end": 239,
+      "text": "Broadcom can benefit from custom ASIC growth in two ways.\nFirst, it can help hyperscalers build the accelerator itself.\nSecond, it can also supply networking and connectivity around those accelerators.\nThat means Broadcom may benefit from both compute growth and networking growth.\nThis is also what makes Broadcom special.\nIt does not necessarily earn money only from ASICs; it may also earn money from infrastructure such as SerDes, Ethernet, switching, and optical connectivity.",
+      "score": 8.78
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#intro",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "INTRO",
+      "line_start": 7,
+      "line_end": 13,
+      "text": "Today we are going to connect several concepts that often appear together in AI infrastructure discussions: ASICs, hyperscalers, Broadcom, SerDes, and NVLink.\nIn this episode we connect several AI infrastructure concepts that often appear together: ASIC, hyperscaler, Broadcom, SerDes, and NVLink.\nThe goal is not just to memorize definitions. The goal is to understand the system: who designs what, why hyperscalers build custom chips, how Broadcom participates, and why networking is becoming almost as important as compute.\nThe point is not to memorize definitions but to understand the whole system: who is responsible for what, why big companies build their own chips, where Broadcom participates, and why network interconnect is becoming more and more important.",
+      "score": 8.13
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-4-where-broadcom-comes-in",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 4 — WHERE BROADCOM COMES IN",
+      "line_start": 79,
+      "line_end": 109,
+      "text": "A useful way to think about Broadcom is:\nThe hyperscaler defines what the chip needs to do.\nBroadcom helps turn those requirements into scalable, manufacturable silicon.\nThe simplest way to understand it:\nThe hyperscaler decides “what chip do I want.”\nBroadcom helps it solve “how to actually turn that into a high-performance chip that can be mass-produced.”\nThe hyperscaler usually owns:\n- the AI model and workload\n- performance targets\n- latency targets\n- power targets\n- software and compiler stack\n- product roadmap\n- deployment strategy\nBroadcom contributes more heavily in:\n- silicon implementation\n- high-speed I/O\n- SerDes\n- networking IP\n- chip interfaces\n- physical design\n- packaging integration\n- process-node integration\n- manufacturability\nThe hyperscaler is more the “demand side + product owner + workload expert.”\nBroadcom is more the “semiconductor engineering + connectivity + implementation partner.”",
+      "score": 7.99
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-1-why-hyperscalers-build-their-own-chips",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 1 — WHY HYPERSCALERS BUILD THEIR OWN CHIPS",
+      "line_start": 17,
+      "line_end": 34,
+      "text": "Why would Google, Amazon, or Meta build their own AI chips instead of simply buying NVIDIA GPUs?\nThe answer is economics at scale.\nFor a normal company, designing a chip is too expensive and complex. But hyperscalers run enormous workloads repeatedly. If a custom chip can reduce cost per AI request by even 10–20%, the total savings can be massive.\nWhy do hyperscalers build their own chips?\nThe core reason is economies of scale. For an ordinary company, designing its own chip does not pay off, but Google, AWS, and Meta run massive, repetitive AI workloads every day. Even saving only 10%–20% per inference can add up to a huge cost advantage.\nA custom ASIC can also be more power efficient because it is optimized for a narrower workload.\nA GPU is flexible. An ASIC gives up some flexibility in exchange for efficiency.\nA GPU is like an SUV: flexible and useful in many situations.\nAn ASIC is like a high-speed train: less flexible, but extremely efficient on the route it was designed for.\nA GPU is like an SUV: general-purpose and flexible.\nAn ASIC is like a high-speed train: it only suits specific routes, but it is extremely efficient.",
+      "score": 7.82
+    },
+    {
+      "id": "podcast-asics-broadcom-nvlink#part-6-what-is-serdes",
+      "kind": "raw",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "doc_title": "AI Infrastructure Learning Podcast",
+      "section": "PART 6 — WHAT IS SERDES?",
+      "line_start": 141,
+      "line_end": 162,
+      "text": "SerDes means Serializer / Deserializer.\nInside a chip, data may be processed in parallel. For long-distance or high-speed chip-to-chip communication, the serializer converts parallel data into a high-speed serial stream. The deserializer converts it back.\nParallel data\n→ Serializer\n→ High-speed serial signal\n→ Transmission\n→ Deserializer\n→ Restored to parallel data\nWhy does this matter for AI?\nThousands of accelerators constantly exchange activations, gradients, model parameters, KV-cache data, and routing information.\nIf communication is too slow, expensive compute units sit idle waiting for data.\nIf the compute chips are fast but pass data to each other slowly, the whole AI cluster is still held back by a communication bottleneck.\nThat is why Broadcom’s strength in SerDes and networking is valuable.\nIt helps build not only the “brain” of the AI system, but also the “nervous system” connecting the chips.",
+      "score": 7.0
+    }
+  ],
+  "model_called": true,
+  "prompt_chars": 5734,
+  "answer": "Insufficient evidence: The provided evidence does not state how much Broadcom earns per year from AI chips.",
+  "timing": {
+    "total_s": 6.42,
+    "load_s": 0.0,
+    "prompt_tokens": 1372,
+    "output_tokens": 21,
+    "tokens_per_s": 24.9
+  },
+  "memory": {
+    "size_gb": 3.24,
+    "size_vram_gb": 3.24,
+    "context_length": 8192
+  },
+  "citation_check": {
+    "cited": [],
+    "insufficient_evidence": true,
+    "unsupported_numbers": [],
+    "problems": [],
+    "status": "pass"
+  }
+}

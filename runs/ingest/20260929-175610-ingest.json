@@ -1,0 +1,209 @@
+{
+  "mode": "ingest",
+  "time": "2026-09-29 17:41:43",
+  "environment": {
+    "model": "gemma4:e4b",
+    "quantization": "Q4_K_M",
+    "execution": "local",
+    "runtime": "Ollama 0.34.4",
+    "endpoint": "http://localhost:11434",
+    "num_ctx": 8192
+  },
+  "unchanged": [],
+  "changed": [],
+  "created": [
+    "wiki/Hardware/AI ASIC Optimization.md",
+    "wiki/Industry/AI Infrastructure System View.md",
+    "wiki/Industry/Broadcom Role in Silicon.md",
+    "wiki/Economics/Demand Elasticity and Statics.md",
+    "wiki/Economics/Economic Cost Calculation.md",
+    "wiki/Hardware/High Speed Interconnect Technologies.md",
+    "wiki/Hardware/Hyperscaler Custom Chip Design.md",
+    "wiki/Inference/LLM Inference Stages.md",
+    "wiki/Inference/LLM Optimization Techniques.md",
+    "wiki/Economics/Market Demand and Supply.md",
+    "wiki/Inference/Memory Constraints.md",
+    "wiki/Economics/Monopoly Price Making.md",
+    "wiki/Inference/Prefill Decode Bottlenecks.md",
+    "wiki/Economics/Price Taker Decisions.md",
+    "wiki/Economics/Two-Part Tariff.md"
+  ],
+  "updated": [],
+  "skipped_reviewed": [],
+  "removed": [],
+  "calls": [
+    {
+      "step": "plan",
+      "source": "raw/podcast-201a-econ-review.md",
+      "total_s": 23.09,
+      "load_s": 5.9,
+      "prompt_tokens": 739,
+      "output_tokens": 327,
+      "tokens_per_s": 23.0
+    },
+    {
+      "step": "plan",
+      "source": "raw/podcast-asics-broadcom-nvlink.md",
+      "total_s": 20.31,
+      "load_s": 0.0,
+      "prompt_tokens": 1144,
+      "output_tokens": 392,
+      "tokens_per_s": 23.4
+    },
+    {
+      "step": "plan",
+      "source": "raw/podcast-llm-inference-memory.md",
+      "total_s": 17.68,
+      "load_s": 0.0,
+      "prompt_tokens": 1290,
+      "output_tokens": 318,
+      "tokens_per_s": 23.6
+    },
+    {
+      "step": "note",
+      "title": "AI ASIC Optimization",
+      "total_s": 38.68,
+      "load_s": 0.0,
+      "prompt_tokens": 1016,
+      "output_tokens": 818,
+      "tokens_per_s": 23.6
+    },
+    {
+      "step": "note",
+      "title": "AI Infrastructure System View",
+      "total_s": 29.86,
+      "load_s": 0.01,
+      "prompt_tokens": 804,
+      "output_tokens": 635,
+      "tokens_per_s": 24.0
+    },
+    {
+      "step": "note",
+      "title": "Broadcom Role in Silicon",
+      "total_s": 43.09,
+      "load_s": 0.01,
+      "prompt_tokens": 1119,
+      "output_tokens": 825,
+      "tokens_per_s": 21.5
+    },
+    {
+      "step": "note",
+      "title": "Demand Elasticity and Statics",
+      "total_s": 56.3,
+      "load_s": 0.01,
+      "prompt_tokens": 1124,
+      "output_tokens": 799,
+      "tokens_per_s": 15.8
+    },
+    {
+      "step": "note",
+      "title": "Economic Cost Calculation",
+      "total_s": 46.89,
+      "load_s": 0.01,
+      "prompt_tokens": 851,
+      "output_tokens": 575,
+      "tokens_per_s": 13.8
+    },
+    {
+      "step": "note",
+      "title": "High Speed Interconnect Technologies",
+      "total_s": 62.88,
+      "load_s": 0.0,
+      "prompt_tokens": 1198,
+      "output_tokens": 762,
+      "tokens_per_s": 13.8
+    },
+    {
+      "step": "note",
+      "title": "Hyperscaler Custom Chip Design",
+      "total_s": 53.32,
+      "load_s": 0.0,
+      "prompt_tokens": 888,
+      "output_tokens": 628,
+      "tokens_per_s": 13.2
+    },
+    {
+      "step": "note",
+      "title": "LLM Inference Stages",
+      "total_s": 29.8,
+      "load_s": 0.01,
+      "prompt_tokens": 527,
+      "output_tokens": 358,
+      "tokens_per_s": 13.7
+    },
+    {
+      "step": "note",
+      "title": "LLM Optimization Techniques",
+      "total_s": 77.78,
+      "load_s": 0.0,
+      "prompt_tokens": 1318,
+      "output_tokens": 973,
+      "tokens_per_s": 14.0
+    },
+    {
+      "step": "note",
+      "title": "Market Demand and Supply",
+      "total_s": 53.92,
+      "load_s": 0.0,
+      "prompt_tokens": 793,
+      "output_tokens": 601,
+      "tokens_per_s": 12.4
+    },
+    {
+      "step": "note",
+      "title": "Memory Constraints",
+      "total_s": 50.59,
+      "load_s": 0.0,
+      "prompt_tokens": 504,
+      "output_tokens": 549,
+      "tokens_per_s": 11.7
+    },
+    {
+      "step": "note",
+      "title": "Monopoly Price Making",
+      "total_s": 68.16,
+      "load_s": 0.01,
+      "prompt_tokens": 1065,
+      "output_tokens": 740,
+      "tokens_per_s": 12.0
+    },
+    {
+      "step": "note",
+      "title": "Prefill Decode Bottlenecks",
+      "total_s": 42.9,
+      "load_s": 0.0,
+      "prompt_tokens": 528,
+      "output_tokens": 469,
+      "tokens_per_s": 12.1
+    },
+    {
+      "step": "note",
+      "title": "Price Taker Decisions",
+      "total_s": 85.97,
+      "load_s": 0.0,
+      "prompt_tokens": 1010,
+      "output_tokens": 762,
+      "tokens_per_s": 9.8
+    },
+    {
+      "step": "note",
+      "title": "Two-Part Tariff",
+      "total_s": 65.86,
+      "load_s": 0.0,
+      "prompt_tokens": 1213,
+      "output_tokens": 643,
+      "tokens_per_s": 11.7
+    }
+  ],
+  "index": {
+    "raw_passages": 59,
+    "wiki_passages": 78,
+    "files": 18
+  },
+  "elapsed_s": 867.4,
+  "memory": {
+    "size_gb": 3.24,
+    "size_vram_gb": 3.24,
+    "context_length": 8192
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "mode": "search",
+  "query": "How does the model avoid redoing work for words it already processed?",
+  "time": "2026-09-30 01:56:10",
+  "model_called": false,
+  "index_built_at": "2026-09-29 18:42:33",
+  "results": [
+    {
+      "id": "podcast-llm-inference-memory#part-2-why-prefill-and-decode-have-different-bot",
+      "kind": "raw",
+      "source": "raw/podcast-llm-inference-memory.md",
+      "doc_title": "Podcast — Why LLM Inference Is Really a Memory Problem",
+      "section": "Part 2 — Why Prefill and Decode Have Different Bottlenecks",
+      "line_start": 13,
+      "line_end": 15,
+      "text": "During prefill, many prompt tokens are already available, so the GPU can process a lot of work in parallel. GPUs are very good at this kind of large parallel matrix computation.\nDecode is different. The model cannot generate token 20 until token 19 already exists. This is autoregressive generation.\nThat leads to one of the most important ideas in AI infrastructure: decode is often not limited by how fast the GPU can calculate; it is limited by how fast the GPU can move data.",
+      "score": 10.7
+    },
+    {
+      "id": "podcast-llm-inference-memory#part-1-inference-is-not-run-the-model-once",
+      "kind": "raw",
+      "source": "raw/podcast-llm-inference-memory.md",
+      "doc_title": "Podcast — Why LLM Inference Is Really a Memory Problem",
+      "section": "Part 1 — Inference is not “run the model once”",
+      "line_start": 8,
+      "line_end": 11,
+      "text": "LLM inference has two very different stages: Prefill and Decode.\nImagine you ask: ‘Explain AI infrastructure to me in simple English.’ First, the model processes your entire prompt. That is prefill. Then it starts producing output one token after another. That is decode.\nSo: Prefill = process the input. Decode = generate the output.\nAn easy way to remember it: Prefill is ‘first read everything you said’; Decode is ‘start answering one word at a time’.",
+      "score": 10.31
+    },
+    {
+      "id": "podcast-llm-inference-memory#part-6-batching",
+      "kind": "raw",
+      "source": "raw/podcast-llm-inference-memory.md",
+      "doc_title": "Podcast — Why LLM Inference Is Really a Memory Problem",
+      "section": "Part 6 — Batching",
+      "line_start": 31,
+      "line_end": 33,
+      "text": "Serving one request at a time can leave an expensive GPU underutilized. Batching processes several requests together so the GPU has more useful work to do.\nHigher utilization matters economically. If a GPU costs the same per hour whether it is 30% or 90% utilized, then better utilization can reduce cost per token and cost per request.\nThat is why inference optimization is not only a technical topic; it is also a business-model topic.",
+      "score": 7.58
+    }
+  ]
+}
