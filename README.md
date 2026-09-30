@@ -224,5 +224,6 @@ vault/                   the Obsidian vault: raw/ originals, wiki/ notes, index.
 evals/                   test plan (written first) and results
 runs/                    every saved run: ask cards, chat transcripts, search results, ingest reports
 docs/                    device/model measurements, cleanup log, screenshots
-.wiki_state/             (gitignored) search index and source hashes, rebuilt by the CLI
+.wiki_state/state.json  source SHA-256 hashes (committed, so re-ingest of a fresh clone reports 'unchanged')
+.wiki_state/index.json  (gitignored) search index, rebuilt automatically
 ```

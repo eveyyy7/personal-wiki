@@ -6,4 +6,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from wiki_cli.cli import main
 
-sys.exit(main())
+try:
+    sys.exit(main())
+except BrokenPipeError:          # e.g. `./wiki search ... | head`
+    sys.stderr.close()
+    sys.exit(0)

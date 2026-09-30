@@ -1,5 +1,7 @@
 # machine state (rebuilt by the CLI)
-.wiki_state/
+.wiki_state/*
+# keep source hashes so a fresh clone knows the sources are already ingested
+!.wiki_state/state.json
 __pycache__/
 drafts/
 .DS_Store

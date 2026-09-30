@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "raw/podcast-201a-econ-review.md": {
+      "id": "src-podcast-201a-econ-review",
+      "title": "MBA 201A Morning Review — Economics for Business Decisions, Lectures 1–6",
+      "sha256": "4d7e729be7f4c0d74d2710edb3f2198aeece5c8c671e44af890a1bb8edbad714",
+      "ingested_at": "2026-09-29 18:22"
+    },
+    "raw/podcast-asics-broadcom-nvlink.md": {
+      "id": "src-podcast-asics-broadcom-nvlink",
+      "title": "AI Infrastructure Learning Podcast",
+      "sha256": "6d7a687a817f45da5c022c89996a5df169fdf23412df118dda047c2b24a9f43a",
+      "ingested_at": "2026-09-29 18:22"
+    },
+    "raw/podcast-llm-inference-memory.md": {
+      "id": "src-podcast-llm-inference-memory",
+      "title": "Podcast — Why LLM Inference Is Really a Memory Problem",
+      "sha256": "5af8d4c20f44b4278de6de7c886123646c2c7e89bed66ab19a83f8b3c36c6cf8",
+      "ingested_at": "2026-09-29 18:22"
+    }
+  }
+}
